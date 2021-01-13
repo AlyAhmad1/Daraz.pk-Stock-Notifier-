@@ -7,11 +7,11 @@
     background-image : url("{% static 'DarazScrapper/BG.jpg'%} ");
     background-size: 1200px 1000px;
     background-repeat: no-repeat;
-
-
-
     }
 
+hr {
+background-color:white;
+}
 
 </style>
     <meta charset="UTF-8">
@@ -20,11 +20,21 @@
 
 </head>
 <body>
+<div style="margin-top:10px;">
+<a href="{% url 'Help' %}">
+<button style="border:2px solid black; border-radius:10px;" class="btn btn-success">
+Help
+</button>
+</a>
 
-
-
-
-<h1 style="text-align:center;color:white;margin-top:10px;">
+<a href="{% url 'About' %}">
+    <button style="border:2px solid black; border-radius:10px;" class="btn btn-success">
+        Contact
+    </button>
+</a>
+</div>
+<hr/>
+<h1 style="text-align:center;color:white;margin-top:10px;margin-left:105px;">
     Daraz.pk Scrapper
 </h1>
 
@@ -58,6 +68,10 @@
         <th scope="col">#</th>
         <th scope="col">Name</th>
         <th scope="col">Stock</th>
+        <th scope="col">Original Price</th>
+        <th scope="col">Ratings</th>
+        <th scope="col">Discount</th>
+        <th scope="col">Discounted Price</th>
 
     </tr>
     </thead>
@@ -68,6 +82,11 @@
                 <th scope="row">{{forloop.counter}}</th>
                 <td>{{j.0}}</td>
                 <td>{{j.1}}</td>
+                <td>{{j.2}}</td>
+                <td>{{j.3}}</td>
+                <td>{{j.4}}%</td>
+                <td>{{j.5}}</td>
+
             </tr>
         {% endfor %}
     {% endfor %}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <style>
+    body {
+    background-image : url("{% static 'DarazScrapper/BG.jpg'%} ");
+    background-size: 1200px 1000px;
+    background-repeat: no-repeat;
+    }
+
+hr{
+color:yellow;
+}
+.s {
+display : block;
+display: inline-block;
+left : 0;
+right : 0;
+padding:0;
+margin-bottom:30px;
+}
+
+
+</style>
+    <meta charset="UTF-8">
+    <title>Help</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+</head>
+<body>
+
+<a href="#" onclick="history.go(-1)">
+    <button class="btn btn-success" style="border:2px solid black; border-radius:10px;float:right;margin:5px;" >
+        Go Back
+    </button>
+</a>
+
+<div style="color:white">
+<h1 style="margin-bottom:0px;">
+    About
+</h1>
+<p style="padding:0px;margin:0px;">
+    This site Provide Information about the Daraz Items. You just need to add URL of the Product.
+    After Submitting the URL in 0.8 you get the Information of the product.
+    Information includes : title, Available Stock, Price, Rating.
+</p>
+</div>
+<hr/>
+<div style="color:white">
+    <h1>Working</h1>
+
+<div class="s">
+    <h4>Step 1</h4>
+    <p>Go to daraz.pk</p>
+    <img src="{% static 'DarazScrapper/1.jpg' %}" style="margin-left:100px;width:400px;height:300px;"/>
+</div>
+
+<div class="s">
+    <h4 style="margin-left:50px;">Step 2</h4>
+    <p style="margin-left:50px;">Open any item</p>
+    <img src="{% static 'DarazScrapper/2.jpg' %}" style="margin-left:100px;width:400px;height:300px;"/>
+</div>
+    <hr/>
+
+<div class="s">
+    <h4>Step 3</h4>
+    <p>Copy link</p>
+    <img src="{% static 'DarazScrapper/3.png' %}" style="margin-left:100px;width:400px;height:200px;"/>
+</div>
+<div class="s">
+    <h4 style="margin-left:50px;">Step 4</h4>
+    <p style="margin-left:50px;">Paste in Scrapper Bar</p>
+    <img src="{% static 'DarazScrapper/5.jpg' %}" style="margin-left:100px;width:400px;height:200px;"/>
+</div>
+
+</div>
+
+
+
+
+</body>
+</html>

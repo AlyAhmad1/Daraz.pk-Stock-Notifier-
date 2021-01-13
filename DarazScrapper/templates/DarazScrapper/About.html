@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <style>
+    body {
+    background-image : url("{% static 'DarazScrapper/BG.jpg'%} ");
+    background-size: 1200px 1000px;
+    background-repeat: no-repeat;
+    }
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+list-style: none;
+display: inline;
+
+padding: 20;
+}
+
+ul.social-network li {
+display: inline;
+}
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+background-color: #007bb7;
+}
+.social-network a.icogithub:hover {
+background-color: Orange;
+}
+
+.social-network a.icogmail:hover {
+background-color: Red;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i,
+ .social-network a.icogithub:hover i,
+ .social-network a.icogmail:hover i
+ {
+color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+color: #44BCDD;
+}
+
+.social-circle li a {
+display: inline-block;
+position: relative;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+border-radius: 50%;
+text-align: center;
+width: 100px;
+height: 100px;
+font-size: 15px;
+}
+
+.social-circle li i {
+margin: 0;
+line-height: 100px;
+text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+-moz-transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+-ms--transform: rotate(360deg);
+transform: rotate(360deg);
+-webkit-transition: all 0.2s;
+-moz-transition: all 0.2s;
+-o-transition: all 0.2s;
+-ms-transition: all 0.2s;
+transition: all 0.2s;
+}
+
+.social-circle i {
+color: #595959;
+-webkit-transition: all 0.8s;
+-moz-transition: all 0.8s;
+-o-transition: all 0.8s;
+-ms-transition: all 0.8s;
+transition: all 0.8s;
+}
+
+.social-network a {
+background-color: white;
+}
+
+hr {
+background-color:white;
+}
+
+
+
+
+</style>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+</head>
+<body>
+
+<a href="#" class="nav-link" onclick="history.go(-1)">
+    <button style="border:2px solid black; border-radius:10px;margin-right:10px;" class="btn btn-success">
+        Go Back
+    </button>
+</a>
+<hr/>
+
+<div  class="row" style="color:white; font-family: Arial, Helvetica, sans-serif; ">
+    <div class="footer-pad">
+        <h1 style="text-align:center;margin-top:150px;">About Developer</h1>
+        <p style="font-size: 15px;width:50%;margin-left:330px;">This Website is Develop by Ali Ahmad. He is a full stack Python Django & Flask Developer and also Data Scraper.
+            He Completed Many Projects of Web Development and Data Scraping. if You have Any kind of Task Related to
+            Above Mention Fields Feel Free to contact on Below Link.
+            Regards
+            Ali Ahmad
+        </p>
+    </div>
+</div>
+
+
+
+<div class="row" style="margin-top:10px;margin-left:350px;">
+    <div class="col-md-12 copy">
+        <ul class="social-network social-circle" style="">
+            <li><a href="https://www.facebook.com/damit.bacha" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/ali-ahmad-219b78197/"  class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/AlyAhmad1" class="icogithub" title="GitHub"><i class="fa fa-github"></i></a></li>
+            <li><a class="icogmail" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHxTsKqPHFfGcMbrQhZQlKzSlvpgbmGQzdmFRGNcQBqwLqcLgwGfsFgmntBpTfTJlFkkjfp" class="Gmail" title="Gmail"><i class="fa fa-google"></i></a></li>
+        </ul>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
