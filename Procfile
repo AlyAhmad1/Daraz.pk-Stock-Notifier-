@@ -1,1 +1,1 @@
-web: gunicorn ECM.wsgi
+web: gunicorn DarazScrapper.wsgi
