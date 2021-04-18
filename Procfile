@@ -1,1 +1,1 @@
-web: gunicorn DarazScrapper.wsgi
+web: gunicorn Scrapper.wsgi
