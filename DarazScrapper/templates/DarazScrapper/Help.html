@@ -5,7 +5,7 @@
     <style>
     body {
     background-image : url("{% static 'DarazScrapper/BG.jpg'%} ");
-    background-size: 1200px 1000px;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     }
 
@@ -35,7 +35,7 @@ background-color:white;
 <body>
 <div>
 <a href="#" onclick="history.go(-1)">
-    <button class="btn btn-success" style="border:2px solid black; border-radius:10px;float:right;margin:5px;" >
+    <button class="btn btn-success" style="border:2px solid black; border-radius:10px;float:left;margin:8px;" >
         Go Back
     </button>
 </a>
@@ -48,10 +48,10 @@ background-color:white;
 </h1>
 
     <hr/>
-    <h1 style="margin-top:0px;">
+    <h1 style="margin-left:10px;">
         About
     </h1>
-    <p style="padding:0px;margin:0px;">
+    <p style="padding:5px;margin-left:10px;">
     This site Provide Information about the Daraz Items. You just need to add URL of the Product.
     After Submitting the URL in 0.8 you get the Information of the product.
     Information includes : title, Available Stock, Price, Rating.
@@ -60,32 +60,35 @@ background-color:white;
 
 </div>
 <div style="color:white">
-    <h1>Working</h1>
+    <h1 style="text-align:center;">Working</h1>
+    <div class="w-100 d-none d-md-block" style="padding-below:20px"></div>
 
-<div class="s">
+<div class="row" style="margin-left:40px;">
+    <div class="col" >
     <h4>Step 1</h4>
     <p>Go to daraz.pk</p>
     <img src="{% static 'DarazScrapper/1.jpg' %}" style="margin-left:100px;width:400px;height:300px;"/>
 </div>
 
-<div class="s">
+<div class="col">
     <h4 style="margin-left:50px;">Step 2</h4>
     <p style="margin-left:50px;">Open any item</p>
     <img src="{% static 'DarazScrapper/2.jpg' %}" style="margin-left:100px;width:400px;height:300px;"/>
 </div>
-    <hr/>
 
-<div class="s">
+ <div class="w-100 d-none d-md-block">  <hr/></div>
+<div class="col">
     <h4>Step 3</h4>
     <p>Copy link</p>
     <img src="{% static 'DarazScrapper/3.png' %}" style="margin-left:100px;width:400px;height:200px;"/>
 </div>
-<div class="s">
+<div class="col">
     <h4 style="margin-left:50px;">Step 4</h4>
     <p style="margin-left:50px;">Paste in Scrapper Bar</p>
     <img src="{% static 'DarazScrapper/5.jpg' %}" style="margin-left:100px;width:400px;height:200px;"/>
 </div>
-
+</div>
+    <div class="w-100 d-none d-md-block">  <hr/></div>
 </div>
 
 
