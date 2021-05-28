@@ -26,7 +26,7 @@ SECRET_KEY = 'tw)(b7%)=997s10i+-vks1=^8u7o#^5kt1+5dn-@k7+db41te$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['daraz-scrapper.herokuapp.com']
 
 
 # Application definition
