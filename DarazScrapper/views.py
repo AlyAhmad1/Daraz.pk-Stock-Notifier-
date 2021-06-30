@@ -29,8 +29,25 @@ class Scrap:
             for i in URL:
                 r = requests.get(i)
                 soup = BeautifulSoup(r.text, 'html.parser')
-                scripts = str(soup.find_all("script")[136])
-                stock_s = scripts.split('stockList')[1].strip().split(']')[0][3:]
+                try:
+                    scripts = str(soup.find_all("script")[135])
+                    stock_s = scripts.split('stockList')[1].strip().split(']')[0][3:]
+                except:
+                    try:
+                        scripts = str(soup.find_all("script")[136])
+                        stock_s = scripts.split('stockList')[1].strip().split(']')[0][3:]
+                    except:
+                        try:
+                            scripts = str(soup.find_all("script")[137])
+                            stock_s = scripts.split('stockList')[1].strip().split(']')[0][3:]
+                        except:
+                            try:
+                                scripts = str(soup.find_all("script")[138])
+                                stock_s = scripts.split('stockList')[1].strip().split(']')[0][3:]
+                            except:
+                                scripts = str(soup.find_all("script")[139])
+                                stock_s = scripts.split('stockList')[1].strip().split(']')[0][3:]
+
                 stock_list = json.loads(stock_s)
                 stock = int(stock_list['stoock'])
                 product_name = scripts.split('pdt_name')[1].split('page')[0][2:-2]
