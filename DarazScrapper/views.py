@@ -29,7 +29,7 @@ class Scrap:
             for i in URL:
                 r = requests.get(i)
                 soup = BeautifulSoup(r.text, 'html.parser')
-                scripts = str(soup.find_all("script")[137])
+                scripts = str(soup.find_all("script")[136])
                 stock_s = scripts.split('stockList')[1].strip().split(']')[0][3:]
                 stock_list = json.loads(stock_s)
                 stock = int(stock_list['stoock'])
